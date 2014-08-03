@@ -1,11 +1,15 @@
-__author__ = 'joeweiss'
+__author__ = 'Josef Weiss - josef@josefweiss.com'
 
 
 import glob
 import csv
 
+csvwriter = csv.writer(open('output.csv', 'wb'))
+
 #Set path to .prm files in relation to where you are running the python file.
 path = './'
+
+#print 'File', 'ID', 'Description', 'Type', 'Event'
 
 #Open and parse all the .prm files
 for inFile in glob.glob1(path, '*.prm'):
@@ -16,7 +20,7 @@ for inFile in glob.glob1(path, '*.prm'):
     newEvent = 'Event'
     count = 0
 
-    print 'File',',',parsedId,',', description,',', newType,',', newEvent
+    #print 'File',',',parsedId,',', description,',', newType,',', newEvent
 
     file = open(inFile)
     for line in file:
@@ -43,10 +47,7 @@ for inFile in glob.glob1(path, '*.prm'):
             if parsedId == parsedId: count += 1
 
         if parsedId == parsedId and count >= 1:
-            #resultFile = open('output.txt', 'wb')
-            #resultFile.writelines(inFile + ',' + parsedId + ','+ description + ',' + newType + ',' + newEvent + '\n')
-            #resultFile.close()
-
+            csvwriter.writerow([inFile, parsedId, description, newType, newEvent])
             print inFile,',',parsedId,',', description,',', newType,',', newEvent
             count = 0
 
