@@ -50,8 +50,9 @@ for inFile in glob.glob1(path, '*.prm'):
             csvwriter.writerow([inFile, parsedId, description, newType, newEvent])
             print inFile,',',parsedId,',', description,',', newType,',', newEvent
             count = 0
+    file.close()
 
-
+print 'Closed or not:', inFile, file.closed
 
 
 

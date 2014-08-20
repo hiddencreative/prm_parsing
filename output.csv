@@ -6,3 +6,11 @@ malware_fireeye.prm,5662,FireEye has reported a web infection alert.,virus,FireE
 malware_fireeye.prm,5663,FireEye has reported a domain match alert.,virus,FireEye-Domain_Match_Alert
 malware_fireeye.prm,5664,FireEye has reported a malware-callback alert.,virus,FireEye-Malware_Callback
 malware_fireeye.prm,5665,FireEye has reported a malware-object alert.,virus,FireEye-Malware_Object
+malware_fireeye2.prm,5658,FireEye has reported a binary analysis alert.,virus,FireEye-Binary_Analysis_Alert
+malware_fireeye2.prm,5659,FireEye has reported a domain match alert.,virus,FireEye-Domain_Match_Alert
+malware_fireeye2.prm,5660,FireEye has reported an infection match alert.,virus,FireEye-Infection_Match_Alert
+malware_fireeye2.prm,5661,FireEye has reported a malware callback alert.,virus,FireEye-Malware_Callback_Alert
+malware_fireeye2.prm,5662,FireEye has reported a web infection alert.,virus,FireEye-Web_Infection_Alert
+malware_fireeye2.prm,5663,FireEye has reported a domain match alert.,virus,FireEye-Domain_Match_Alert
+malware_fireeye2.prm,5664,FireEye has reported a malware-callback alert.,virus,FireEye-Malware_Callback
+malware_fireeye2.prm,5665,FireEye has reported a malware-object alert.,virus,FireEye-Malware_Object
